@@ -1,5 +1,5 @@
 # Broken-Link-Crawler
-This script provides a way to quickly identify broken a website's broken links and extract them to a .csv file
+This script provides a way to quickly identify a website's broken links and extract them to a .csv file
 
 v1.0-beta is a simple script. Plans for future releases are as follows;
   - Offer port for Windows environments
