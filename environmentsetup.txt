@@ -1,0 +1,29 @@
+This project uses Python 3.9
+It is recommended to use a virtual environment to run this script
+To set up a virtual environment open a terminal and follow instructions.
+
+----------------------INSTALL PYTHON 3.9.x-----------------------
+|                                                               |
+| 1) Run the following commands to install Python 3 (if needed) |
+|   - $ sudo apt update                                         |
+|   - $ sudo apt install software-properties-common             |
+|   - $ sudo add-apt-repository ppa:deadsnakes/ppa              |
+|   - $ sudo apt install python3.9                              |
+| 2) Run the following command to verify Python 3 installed     |
+|   - $ python3.9 --version                                     |
+|   - The output should read                                    |
+|     Python 3.9.x                                              |
+|                                                               |
+-----------------------------------------------------------------
+
+
+
+--------SET UP AND ACTIVATE A VIRTUAL PYTHON ENVIRONMENT---------
+|                                                               |
+| 1) Run the following commands                                 |
+|    - $ python3 -m venv venv                                   |
+|    - $ . venv/bin/activate                                    |    
+| 2) Install scrapy                                             |
+|    - $ pip install scrapy                                     |
+|                                                               |
+-----------------------------------------------------------------
