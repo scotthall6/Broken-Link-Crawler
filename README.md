@@ -5,3 +5,5 @@ v1.0-beta is a simple script. Plans for future releases are as follows;
   - Offer port for Windows environments
   - Offer a GUI for ease-of-use
   - Develop as a stand-alone app for further ease of use.
+
+Refer to https://scrapy.org for official Scrapy documentation
