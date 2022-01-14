@@ -7,18 +7,18 @@ Scrapy (https://scrapy.org)
 v1.0-beta: Unix environment
 
 -------------------------------------Implementation-------------------------------------
-) Create target directory & cd to empty directory. NOTE: Target directory MUST be empty!
-) Paste code into text editor
-) Provide parameters
+1) Create target directory & cd to empty directory. NOTE: Target directory MUST be empty!
+2) Paste code into text editor
+3) Provide parameters
     - target_urls
     - start_urls
     - handle_httpstatus_list
     - report
-) Save as main.py
-) Open a terminal
-) Set up and activate a python virtual environment
-) Install scrapy with: $ pip install scrapy
-) Run the crawler with: $ scrapy runspider script.py -o <insert_report_name.csv>
+4) Save as main.py
+5) Open a terminal
+6) Set up and activate a python virtual environment. Refer to environmentsetup.txt
+7) Install scrapy with: $ pip install scrapy
+8) Run the crawler with: $ scrapy runspider script.py -o <insert_report_name.csv>
 
 """
 
@@ -59,7 +59,7 @@ class Spider(CrawlSpider):
         )
     ]
 
-    # method that yields a tuple containing the referer,
+    # method that yields a tuple containing the referer's header, the response the http request, and the status of the requested link
     def parse_my_url(self, response):
         report = [insert error/response codes separated by a comma]  # should match handle_httpstatus_list
         if response.status in report:  # if the response matches then creates a MyItems
@@ -68,4 +68,4 @@ class Spider(CrawlSpider):
             item['Response'] = response.url
             item['Status'] = response.status
             yield item
-        yield None  # if the response did not match return empty
+        yield None  # if the response did not match yield nothing
